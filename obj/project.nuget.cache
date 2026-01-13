@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "s+liVmzvv90=",
+  "success": true,
+  "projectFilePath": "D:\\GitHub Projects\\bloodbank\\bloodbank.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\daeha\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.8\\microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
+    "C:\\Users\\daeha\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
