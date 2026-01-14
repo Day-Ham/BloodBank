@@ -1,0 +1,10 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: bloodbank-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: P@ssword123
+      MYSQL_DATABASE: BloodBankDB
+    ports:
+      - "3306:3306"
