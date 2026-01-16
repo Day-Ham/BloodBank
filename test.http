@@ -1,0 +1,17 @@
+@hostname = localhost
+@port = 5279
+@host = http://{{hostname}}:{{port}}
+
+### Get All Donors
+GET {{host}}/api/donors
+
+###
+
+### Add a New Donor
+POST {{host}}/api/donors
+Content-Type: application/json
+
+{
+    "fullName": "Sarah Connor",
+    "bloodType": "A+"
+}

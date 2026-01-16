@@ -1,18 +1,17 @@
-namespace bloodbank;
+namespace BloodBank.Models; // This "label" must be here
 
 public class Donor
 {
     public int Id { get; set; }
-    public string Name { get; set; }
-    public string BloodType { get; set; }
+    public string FullName { get; set; } = string.Empty;
+    public string BloodType { get; set; } = string.Empty;
     public List<DonationRecord> DonationHistory { get; set; } = new();
 
-    // The logic now looks at the very last item in the list
     public bool IsEligible 
     {
         get 
         {
-            if (!DonationHistory.Any()) return true; // Never donated? They are eligible!
+            if (!DonationHistory.Any()) return true;
             var lastDonation = DonationHistory.Max(d => d.DonationDate);
             return (DateTime.Now - lastDonation).TotalDays >= 56;
         }
@@ -21,10 +20,8 @@ public class Donor
 
 public class DonationRecord
 {
-    public int ID { get; set; }
+    public int Id { get; set; }
     public DateTime DonationDate { get; set; }
-    public string LocationOfDonation { get; set; }
+    public int Milliliters { get; set; }
     public int DonorId { get; set; }
-
-
 }

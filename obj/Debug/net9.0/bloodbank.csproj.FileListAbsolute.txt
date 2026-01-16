@@ -30,3 +30,9 @@ D:\GitHub Projects\bloodbank\obj\Debug\net9.0\refint\bloodbank.dll
 D:\GitHub Projects\bloodbank\obj\Debug\net9.0\bloodbank.pdb
 D:\GitHub Projects\bloodbank\obj\Debug\net9.0\bloodbank.genruntimeconfig.cache
 D:\GitHub Projects\bloodbank\obj\Debug\net9.0\ref\bloodbank.dll
+D:\GitHub Projects\bloodbank\obj\Debug\net9.0\bloodbank.sourcelink.json
+D:\GitHub Projects\bloodbank\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\GitHub Projects\bloodbank\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\GitHub Projects\bloodbank\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\GitHub Projects\bloodbank\bin\Debug\net9.0\MySqlConnector.dll
+D:\GitHub Projects\bloodbank\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll

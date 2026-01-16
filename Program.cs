@@ -1,6 +1,13 @@
+using System;
+using System.Linq;
+using BloodBank;
+using BloodBank.Models;
+using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = "server=localhost;port=3306;user=root;password=P@ssword123;database=BloodBankDB";
 
-// Add services to the container.
+builder.Services.AddDbContext<BloodBankContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -12,6 +19,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    
 }
 
 app.UseHttpsRedirection();
