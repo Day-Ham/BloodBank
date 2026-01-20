@@ -5,6 +5,8 @@
 ### Get All Donors
 GET {{host}}/api/donors
 
+### Get All Donations
+GET {{host}}/api/donors/donations
 ###
 
 ### Add a New Donor
@@ -15,3 +17,15 @@ Content-Type: application/json
     "fullName": "Sarah Connor",
     "bloodType": "A+"
 }
+
+### Add a donation to a specific donor (ID 1)
+### Add a Donation
+POST http://localhost:5279/api/donors/donations
+Content-Type: application/json
+
+{
+    "milliliters": 450,
+    "donationDate": "2026-05-20T13:00:00",
+    "donorId": 1
+}
+
